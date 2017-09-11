@@ -1,6 +1,17 @@
-hello testing message
-hello testing message
-hello testing message
+git config  user.name 
 
-v
-hello testing message
+git config  user.email 
+
+git config --global user.name 'tusharcseru09' 
+
+git config --global user.email 'tushar.cseru09@gmail.com' 
+
+git clone https://github.com/tusharcseru09/GitTest.git
+
+git add test.txt
+
+git status
+
+git commit -m "test file updated second time" test.txt
+
+git push -u origin master
