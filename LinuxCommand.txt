@@ -1,6 +1,6 @@
 
-List:
-====
+List:ls -laF
+============
 
 Usage: ls [-1AaCxdLHRFplinsehrSXvctu] [-w WIDTH] [FILE]...
 
@@ -32,4 +32,88 @@ List directory contents
         -u      With -l: sort by atime
         -w N    Assume the terminal is N columns wide
         --color[={always,never,auto}]   Control coloring
+
+
+[2017-10-10 14:59.05]  ~/Desktop/New folder/www
+[maidul.PDM_Tushar_24] > ls -i html.txt
+8725724278214481 html.txt
+                                                                                        
+
+[2017-10-10 14:59.41]  ~/Desktop/New folder/www
+[maidul.PDM_Tushar_24] > mv html.txt new.txt
+                                                                                       
+
+[2017-10-10 14:59.55]  ~/Desktop/New folder/www
+[maidul.PDM_Tushar_24] > ls -i new.txt
+8725724278214481 new.txt
+                                                                                       
+
+[2017-10-10 15:00.04]  ~/Desktop/New folder/www
+[maidul.PDM_Tushar_24] > mv new.txt Test/
+                                                                                        
+
+[2017-10-10 15:00.36]  ~/Desktop/New folder/www
+[maidul.PDM_Tushar_24] > ls -i Test/new.txt
+8725724278214481 Test/new.txt
+
+
+Copy: cp source destination
+===========================
+
+
+Usage: cp [OPTIONS] SOURCE... DEST
+
+Copy SOURCE(s) to DEST
+
+        -a      Same as -dpR
+        -R,-r   Recurse
+        -d,-P   Preserve symlinks (default if -R)
+        -L      Follow all symlinks
+        -H      Follow symlinks on command line
+        -p      Preserve file attributes if possible
+        -f      Overwrite
+        -i      Prompt before overwrite
+        -l,-s   Create (sym)links
+
+ cp test_one.txt  Documents/test_one.txt
+ cp -i test_one.txt Documents/test_one.txt
+ cp -R folder1/ folder2/
+ cp -R folder1/* folder2/
+ cp -iR GitTest/* Rtest/
+ cp *.txt Rtest/textfiles  
+ cp *txt Rtest/textfiles
+
+
+Move: mv source dist
+===================
+
+mv hello.txt hello.txt
+mv -i hello.txt hello.txt
+mv hello.txt test.txt
+mv hello.txt test/hello.txt
+
+
+Delete: rm filepath
+===================
+
+rm -i fall
+rm -i f?ll
+
+
+Manage Directory:
+==================
+mkdir New_Dir
+mkdir -p New_Dir/Sub_Dir/Under_Dir
+
+
+Deleting directories
+====================
+
+The rmdir has no -i option to ask if you want to remove the directory. This is one reason
+it is helpful that rmdir removes only empty directories.
+
+rm -i New_Dir/my_file
+rmdir New_Dir
+
+
 
