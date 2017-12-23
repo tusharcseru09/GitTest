@@ -2,9 +2,9 @@ git config  user.name
 
 git config  user.email 
 
-git config --global user.name 'tusharcseru09' 
+git config --global user.name 'xxxx' 
 
-git config --global user.email 'tushar.cseru09@gmail.com' 
+git config --global user.email 'xxxx.xxxx@gmail.com' 
 
 git clone https://github.com/tusharcseru09/GitTest.git
 
